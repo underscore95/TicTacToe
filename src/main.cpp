@@ -8,7 +8,16 @@
 void playGame();
 
 int main() {
-	playGame();
+
+	std::string playAgain;
+	do {
+		for (int i = 0; i < 10; ++i) {
+			std::cout << "\n";
+		}
+		playGame();
+		std::cout << "Play Again? (y/n): ";
+		std::getline(std::cin, playAgain);
+	} while (playAgain != "n");
 	return 0;
 }
 
