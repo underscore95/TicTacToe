@@ -12,7 +12,7 @@ endif()
 project ("TicTacToe")
 
 # Add source to this project's executable.
-add_executable (TicTacToe   "src/main.cpp")
+add_executable (TicTacToe   "src/main.cpp" "src/tictactoe.h" "src/player.h" "src/game_state.h" "src/tictactoe.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET TicTacToe PROPERTY CXX_STANDARD 20)
